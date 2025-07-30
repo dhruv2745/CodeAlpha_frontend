@@ -1,10 +1,39 @@
+let currentIndex = 0;
+let galleryImages = [];
+
 function openLightbox(src) {
-  const lightbox = document.getElementById('lightbox');
-  const img = document.getElementById('lightbox-img');
-  img.src = src;
-  lightbox.style.display = 'flex';
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  galleryImages = Array.from(document.querySelectorAll(".gallery img")).map(img => img.src);
+  currentIndex = galleryImages.indexOf(src);
+
+  lightboxImg.src = src;
+  lightbox.style.display = "flex";
 }
 
 function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
+  document.getElementById("lightbox").style.display = "none";
 }
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  document.getElementById("lightbox-img").src = galleryImages[currentIndex];
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  document.getElementById("lightbox-img").src = galleryImages[currentIndex];
+}
+
+function filterImages(category) {
+  const images = document.querySelectorAll(".gallery .image");
+  images.forEach(img => {
+    if (category === 'all' || img.classList.contains(category)) {
+      img.style.display = "block";
+    } else {
+      img.style.display = "none";
+    }
+  });
+}
+
