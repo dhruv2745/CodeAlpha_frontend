@@ -3,3 +3,64 @@ image-gallery/
 ├── index.html
 ├── style.css
 └── script.js
+
+
+1. index.html – HTML Tasks :
+
+ Create a container for the gallery layout
+
+ Add a title/header for the gallery
+
+ Add filter buttons for categories (All, Nature, City, Animals)
+
+ Create a responsive image grid with category classes
+
+ Include lightbox modal (hidden by default)
+
+ Lightbox image element
+
+ Close (×) button
+
+ Prev/Next navigation buttons
+
+ 2. style.css – CSS Tasks :
+
+ Style the body and container with spacing and background
+
+ Make filter buttons styled and hoverable
+
+ Create responsive gallery layout using CSS Grid
+
+ Style images with hover effects and smooth scale transitions
+
+ Design lightbox modal (centered, dark background)
+
+ Style navigation and close buttons in lightbox
+
+ Ensure layout works on mobile and desktop (media queries optional)
+
+3. ⚙️ script.js – JavaScript Tasks :
+
+ Implement openLightbox() to show selected image in modal
+
+ Implement closeLightbox() to hide modal on × click
+
+ Add nextImage() and prevImage() to navigate through gallery
+
+ Add filterImages(category) to show/hide images by category
+
+ Initialize current image index for navigation
+
+ (Optional) Add keyboard support for Esc, ←, → keys
+
+ Bonus (Optional) :
+ Add transition animations to lightbox
+
+ Add active state to filter buttons
+
+ Add lazy loading for images (loading="lazy")
+
+ Add a category label on image hover
+
+ Add fullscreen toggle to lightbox
+
