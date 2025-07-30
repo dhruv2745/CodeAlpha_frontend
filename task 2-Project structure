@@ -4,59 +4,68 @@ image-gallery/
 ├── style.css        # Styling for gallery grid, lightbox, responsiveness
 └── script.js        # JS functionality: filtering, lightbox, nav
 
- index.html – HTML Tasks :
- Create a container for the gallery layout
+1. index.html – HTML Tasks :
 
- Add a title/header for the gallery
+ Create a div container for the calculator layout
 
- Add filter buttons for categories (All, Nature, City, Animals)
+ Add a display (input or div) to show the current expression/result
 
- Create a responsive image grid with category classes
+ Create buttons for digits (0–9) and decimal (.)
 
- Include lightbox modal (hidden by default)
+ Create operator buttons: +, −, ×, ÷
 
- Lightbox image element
+ Add Clear (C) and Equal (=) buttons
 
- Close (×) button
+ Structure buttons in a grid layout using semantic elements
 
- Prev/Next navigation buttons
+2. style.css – CSS Tasks :
 
- style.css – CSS Tasks :
- Style the body and container with spacing and background
+ Center the calculator on the screen
 
- Make filter buttons styled and hoverable
+ Style the calculator container (e.g. border-radius, shadow)
 
- Create responsive gallery layout using CSS Grid
+ Style the display area (font size, alignment, padding)
 
- Style images with hover effects and smooth scale transitions
+ Style the buttons with hover effects and click feedback
 
- Design lightbox modal (centered, dark background)
+ Make the layout responsive for smaller screens
 
- Style navigation and close buttons in lightbox
+ Use CSS Grid or Flexbox for button arrangement
 
- Ensure layout works on mobile and desktop (media queries optional)
+ (Bonus) Add theme colors, transitions, or animations
 
-⚙️ script.js – JavaScript Tasks
- Implement openLightbox() to show selected image in modal
+3. ⚙️ script.js – JavaScript Tasks :
 
- Implement closeLightbox() to hide modal on × click
+ Implement function to append digits/operators to the display
 
- Add nextImage() and prevImage() to navigate through gallery
+ Implement function to clear the display
 
- Add filterImages(category) to show/hide images by category
+ Implement function to evaluate and show the result
 
- Initialize current image index for navigation
+ Handle decimal input correctly
 
- (Optional) Add keyboard support for Esc, ←, → keys
+ Handle division by zero and other input errors
 
- Bonus (Optional) :
- Add transition animations to lightbox
+ (Bonus) Add support for keyboard input (e.g., Enter, Backspace)
 
- Add active state to filter buttons
+ Prevent multiple operators being entered consecutively
 
- Add lazy loading for images (loading="lazy")
+* Bonus (Optional) :
 
- Add a category label on image hover
+ Add dark/light theme toggle
 
- Add fullscreen toggle to lightbox
+ Add copy-to-clipboard for results
+
+ Add backspace/delete last digit functionality
+
+ Show live result preview as user types
+
+
+
+
+
+
+
+
+ 
 
